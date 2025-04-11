@@ -28,7 +28,7 @@ const Home = () => {
       {
         loading ? <Loading />
       
-      : <div className='flex items-center gap-6  '>
+      : <div className='grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-6  '>
         {
           allUsers.map((user,idx) => {
             return <div key={idx} className='flex flex-col items-center bg-gray-500/20 p-8 rounded'>
