@@ -33,7 +33,10 @@ const AddUser = () => {
           if(response){
             toast.success(response.data.message)
             navigate('/') 
-            window.location.reload();    
+            window.location.reload(); 
+            setUserId("")  
+              setUserName("") 
+              setUserAge("")   
 
           } 
         } catch (error) {

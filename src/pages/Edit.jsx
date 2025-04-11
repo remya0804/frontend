@@ -47,7 +47,10 @@ const Edit = () => {
               if(response){
                 toast.success("User data updated successfully!!!")
                 navigate('/') 
-                window.location.reload();    
+                window.location.reload(); 
+                setUserId("")  
+                setUserName("") 
+                setUserAge("")
 
               } 
             } catch (error) {
